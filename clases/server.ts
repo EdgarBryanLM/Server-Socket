@@ -43,8 +43,11 @@ export default class Server{
     //Usuarios
     socket.usuarios(cliente,this.io);
 
+    //Obtener-Usuarios
+    socket.obtenerUusuarios(cliente,this.io);
+
     //Desconectar
-    socket.desconectarCliente(cliente);
+    socket.desconectarCliente(cliente,this.io);
 
     //Mensajes
     socket.mensaje(cliente,this.io);

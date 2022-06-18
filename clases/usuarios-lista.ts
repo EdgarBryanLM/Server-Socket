@@ -34,7 +34,8 @@ export class UsuarioLista{
 
 
     public GetAll(){
-        return this.lista;
+        return this.lista.filter(usua=>usua.nombre!=='sin nombre');
+        
     }
 
 
